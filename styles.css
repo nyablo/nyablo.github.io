@@ -159,6 +159,23 @@ body {
     background: var(--bg-primary);
 }
 
+.contact-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 16px;
+}
+
+.contact-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.contact-links a:hover {
+    color: var(--text-primary);
+}
+
 /* Featured project - full width */
 .card-featured {
     grid-column: span 4;
@@ -338,6 +355,12 @@ body {
 
     .social-links a {
         text-align: center;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
     }
 
     .card-quote blockquote {
