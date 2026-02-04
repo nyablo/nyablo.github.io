@@ -4,51 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi! I'm Nazarii</title>
+    <title>Nazarii Yablonskyi - Senior Full Stack Engineer</title>
     <link rel="stylesheet" href="styles.css">
-
     <link rel="icon" href="favicon.png" type="image/png">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-content">
-            <h1>Hi!</h1>
-            <p>I'm Nazarii, a Full Stack Developer</p>
-            <div class="social-links">
-                <a href="https://github.com/nyablo" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/nazarii-yablonskyi" target="_blank">LinkedIn</a>
-            </div>
-        </div>
-    </header>
+    <div class="bento-container">
+        <div class="bento-grid">
 
-    <div class="container">
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <h3><a href="https://emailsurf.app" target="_blank">EmailSurf: Voice-first Inbox Zero</a></h3>
-                <p>AI-powered email assistant that helps you read, reply, and stay productive — even when your hands and
-                    eyes are busy.</p>
-                <div class="tags">
-                    <span class="tag">Productivity tools</span>
-                    <span class="tag">AI/LLM</span>
-                    <span class="tag">Node.js</span>
-                    <span class="tag">iOS/Android development</span>
-                    <span class="tag">Web development</span>
+            <!-- Intro card - large -->
+            <div class="bento-card card-intro">
+                <h1><span class="name-accent">Nazarii Yablonskyi</span></h1>
+                <p class="role">Senior Full Stack Engineer</p>
+                <p class="bio">8+ years building production systems in fintech, crypto, and AI. <br /> I own features
+                    end-to-end and thrive in distributed teams shipping reliable, secure products.</p>
+                <div class="social-links">
+                    <a href="https://github.com/nyablo" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/nazarii-yablonskyi" target="_blank">LinkedIn</a>
                 </div>
             </div>
 
-            <div class="portfolio-item">
-                <h3><a href="https://isitbad.work" target="_blank">A Node.js + Llama 3 experiment</a></h3>
-                <p>Delivers motivational quotes using a Node.js Cloudflare Worker backed by Llama 3 AI Model</p>
+            <!-- Featured project - wide -->
+            <div class="bento-card card-featured">
+                <span class="card-label">Featured Project</span>
+                <h2><a href="https://emailsurf.app" target="_blank">EmailSurf</a></h2>
+                <p class="tagline">Voice-first inbox zero</p>
+                <p class="description">AI-powered email assistant that helps you read, reply, and stay productive — even
+                    when your hands and eyes are busy. Built from scratch: backend, iOS, Android, and web.</p>
                 <div class="tags">
-                    <span class="tag">Llama 3</span>
                     <span class="tag">AI/LLM</span>
                     <span class="tag">Node.js</span>
-                    <span class="tag">Cloudflare</span>
-                    <span class="tag">Serverless</span>
-                    <span class="tag">HTML</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">CSS</span>
+                    <span class="tag">React Native</span>
+                    <span class="tag">iOS</span>
+                    <span class="tag">Android</span>
+                </div>
+                <a href="https://emailsurf.app" target="_blank" class="cta">Visit EmailSurf →</a>
+            </div>
+
+            <!-- Languages card -->
+            <div class="bento-card card-skills">
+                <span class="card-label">Languages</span>
+                <div class="skill-list">
+                    <span>TypeScript</span>
+                    <span>JavaScript</span>
+                    <span>Go</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+
+            <!-- Stack card -->
+            <div class="bento-card card-skills">
+                <span class="card-label">Stack</span>
+                <div class="skill-list">
+                    <span>React</span>
+                    <span>React Native</span>
+                    <span>Node.js</span>
+                    <span>GraphQL</span>
+                </div>
+            </div>
+
+            <!-- Infrastructure card -->
+            <div class="bento-card card-infra">
+                <span class="card-label">Infrastructure</span>
+                <div class="skill-list">
+                    <span>AWS</span>
+                    <span>GCP</span>
+                    <span>Terraform</span>
+                    <span>Cloudflare</span>
+                    <span>Serverless</span>
                 </div>
             </div>
 
