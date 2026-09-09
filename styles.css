@@ -72,6 +72,8 @@ body {
 .bento-card:nth-child(3) { animation-delay: 0.15s; }
 .bento-card:nth-child(4) { animation-delay: 0.2s; }
 .bento-card:nth-child(5) { animation-delay: 0.25s; }
+.bento-card:nth-child(6) { animation-delay: 0.3s; }
+.bento-card:nth-child(7) { animation-delay: 0.35s; }
 
 @keyframes card-appear {
     from {
@@ -200,28 +202,51 @@ body {
     margin-bottom: 4px;
 }
 
-.card-featured h2 a {
+/* Secondary projects - half width */
+.card-project {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-project h3 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+}
+
+.card-featured h2 a,
+.card-project h3 a {
     color: var(--text-primary);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
-.card-featured h2 a:hover {
+.card-featured h2 a:hover,
+.card-project h3 a:hover {
     color: var(--accent);
 }
 
-.card-featured .tagline {
+.tagline {
     font-size: 15px;
     color: var(--accent);
     font-weight: 500;
     margin-bottom: 12px;
 }
 
-.card-featured .description {
+.description {
     font-size: 15px;
     color: var(--text-secondary);
     line-height: 1.7;
     max-width: 600px;
+    margin-bottom: 20px;
+}
+
+/* Push the CTA to the bottom so side-by-side project cards align */
+.card-project .tags {
+    margin-top: auto;
     margin-bottom: 20px;
 }
 
@@ -230,6 +255,11 @@ body {
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 24px;
+}
+
+/* No CTA below - don't leave a trailing gap */
+.tags:last-child {
+    margin-bottom: 0;
 }
 
 .tag {
@@ -305,7 +335,8 @@ body {
         font-size: 32px;
     }
 
-    .card-featured {
+    .card-featured,
+    .card-project {
         grid-column: span 2;
     }
 
@@ -332,6 +363,7 @@ body {
 
     .card-intro,
     .card-featured,
+    .card-project,
     .card-skills,
     .card-infra {
         grid-column: span 1;
